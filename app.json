@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Medi-Sense AI",
+    "slug": "medi-sense-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": { "backgroundColor": "#5B21B6" },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.medisense.ai",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Medi-Sense AI needs your location to find the nearest hospital.",
+        "NSLocationAlwaysUsageDescription": "Medi-Sense AI needs your location to find the nearest hospital."
+      }
+    },
+    "android": {
+      "adaptiveIcon": { "backgroundColor": "#5B21B6" },
+      "package": "com.medisense.ai",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        
+        "CALL_PHONE",
+        "SEND_SMS"
+      ]
+    },
+    "web": { "bundler": "metro" },
+    "plugins": [
+      ["expo-location", {
+        "locationAlwaysAndWhenInUsePermission": "Medi-Sense AI needs your location to find the nearest hospital."
+      }]
+    ]
+  }
+}
