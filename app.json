@@ -20,7 +20,7 @@
       "package": "com.medisense.ai",
       "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "CALL_PHONE", "SEND_SMS"]
     },
-    "web": { "bundler": "metro", "output": "static", "favicon": "./assets/favicon.png" },
+    "web": { "bundler": "metro", "output": "static" },
     "plugins": [
       ["expo-location", { "locationAlwaysAndWhenInUsePermission": "Medi-Sense AI needs your location to find the nearest hospital." }]
     ]
