@@ -18,19 +18,11 @@
     "android": {
       "adaptiveIcon": { "backgroundColor": "#5B21B6" },
       "package": "com.medisense.ai",
-      "permissions": [
-        "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        
-        "CALL_PHONE",
-        "SEND_SMS"
-      ]
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "CALL_PHONE", "SEND_SMS"]
     },
-    "web": { "bundler": "metro" },
+    "web": { "bundler": "metro", "output": "static", "favicon": "./assets/favicon.png" },
     "plugins": [
-      ["expo-location", {
-        "locationAlwaysAndWhenInUsePermission": "Medi-Sense AI needs your location to find the nearest hospital."
-      }]
+      ["expo-location", { "locationAlwaysAndWhenInUsePermission": "Medi-Sense AI needs your location to find the nearest hospital." }]
     ]
   }
 }
